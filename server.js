@@ -32,17 +32,6 @@ mongoose
  .then(() => console.log("Database connected!"))
  .catch(err => console.log(err));
 
-/* mongoose
-  .connect(process.env.MONGODB_LOCAL_URL, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  })
-  .then((response) => {
-    console.log("Mongo DB Connected Successfully....");
-  })
-  .catch((err) => {}); */
 
 app.listen(PORT, (err) => {
   if (err) throw err;
